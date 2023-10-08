@@ -1,0 +1,67 @@
+#formcontato {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-areas:
+        "Nome Email"
+        "Telefone Mensagem";
+}
+
+input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 5px 5px 5px 5px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+textarea {
+    padding: 5px 5px 5px 5px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+
+}
+
+input::selection {
+    color: white;
+    background-color: blue;
+}
+
+textarea::selection {
+    color: white;
+    background-color: blue;
+}
+
+@media screen and (min-width: 769px) {
+    #formcontato {
+        grid-template-columns: repeat(4, 200px);
+        grid-template-areas:
+            "nome Email Telefone Mensagem";
+        gap: 5px;
+    }
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li:visited {
+    color: red;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+}
